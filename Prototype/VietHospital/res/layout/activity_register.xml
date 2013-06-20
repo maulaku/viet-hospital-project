@@ -1,0 +1,174 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".RegisterActivity" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/Canel" />
+
+        <Button
+            android:id="@+id/btnJoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnCancel"
+            android:layout_alignBottom="@+id/btnCancel"
+            android:layout_alignParentRight="true"
+            android:text="@string/Join" />
+
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnCancel"
+            android:layout_alignRight="@+id/btnJoin"
+            android:layout_below="@+id/btnCancel"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="@string/prompt_firstname"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etFirstName"
+            android:layout_alignRight="@+id/etFirstName"
+            android:layout_below="@+id/etFirstName"
+            android:ems="10"
+            android:hint="@string/prompt_lastname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etLastName"
+            android:layout_alignRight="@+id/etLastName"
+            android:layout_below="@+id/etLastName"
+            android:ems="10"
+            android:hint="@string/prompt_dob"
+            android:focusable="false"
+            android:inputType="none" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etDOB"
+            android:layout_alignRight="@+id/etDOB"
+            android:layout_below="@+id/etDOB"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/prompt_male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_female" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rgGender"
+            android:layout_alignRight="@+id/etDOB"
+            android:layout_below="@+id/rgGender"
+            android:ems="10"
+            android:hint="@string/prompt_address"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/etLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAddress"
+            android:layout_alignRight="@+id/etAddress"
+            android:layout_below="@+id/etAddress"
+            android:ems="10"
+            android:hint="@string/prompt_license"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etLicense"
+            android:layout_alignRight="@+id/etLicense"
+            android:layout_below="@+id/etLicense"
+            android:ems="10"
+            android:hint="@string/prompt_email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etEmail"
+            android:layout_alignRight="@+id/etEmail"
+            android:layout_below="@+id/etEmail"
+            android:ems="10"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPassword"
+            android:layout_alignRight="@+id/etPassword"
+            android:layout_below="@+id/etPassword"
+            android:ems="10"
+            android:hint="@string/prompt_confirm_password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etConfirmPassword"
+            android:layout_alignRight="@+id/etConfirmPassword"
+            android:layout_below="@+id/etConfirmPassword"
+            android:ems="10"
+            android:hint="@string/prompt_phone_number"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etAgreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etPhoneNumber"
+            android:layout_alignRight="@+id/etPhoneNumber"
+            android:layout_below="@+id/etPhoneNumber"
+            android:inputType="textMultiLine"
+            android:text="Agreement...
+             Agreement...
+             Agreement...
+             Agreement..." />
+    </RelativeLayout>
+
+</ScrollView>
