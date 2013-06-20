@@ -30,10 +30,25 @@ public final class R {
         public static final int user=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090008;
+        public static final int action_settings=0x7f090017;
+        public static final int btnCancel=0x7f090008;
+        public static final int btnJoin=0x7f090009;
+        public static final int etAddress=0x7f090010;
+        public static final int etAgreement=0x7f090016;
+        public static final int etConfirmPassword=0x7f090014;
+        public static final int etDOB=0x7f09000c;
+        public static final int etEmail=0x7f090012;
+        public static final int etFirstName=0x7f09000a;
+        public static final int etLastName=0x7f09000b;
+        public static final int etLicense=0x7f090011;
+        public static final int etPassword=0x7f090013;
+        public static final int etPhoneNumber=0x7f090015;
         public static final int imageView1=0x7f090000;
         public static final int login=0x7f090004;
         public static final int password=0x7f090003;
+        public static final int rbFemale=0x7f09000f;
+        public static final int rbMale=0x7f09000e;
+        public static final int rgGender=0x7f09000d;
         public static final int sign_in_button=0x7f090005;
         public static final int textView1=0x7f090001;
         public static final int tvForgotPassword=0x7f090007;
@@ -42,11 +57,16 @@ public final class R {
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
+        public static final int activity_register=0x7f030001;
     }
     public static final class menu {
         public static final int login=0x7f080000;
+        public static final int register=0x7f080001;
     }
     public static final class string {
+        public static final int Canel=0x7f060018;
+        public static final int Join=0x7f060019;
+        public static final int action_settings=0x7f06001c;
         public static final int action_sign_in_register=0x7f060004;
         public static final int action_sign_in_short=0x7f060005;
         public static final int app_name=0x7f060000;
@@ -54,15 +74,31 @@ public final class R {
         public static final int error_incorrect_password=0x7f060009;
         public static final int error_invalid_email=0x7f060007;
         public static final int error_invalid_password=0x7f060008;
-        public static final int link_forgot_password=0x7f06000d;
-        public static final int link_register=0x7f06000c;
+        public static final int link_forgot_password=0x7f06000c;
+        public static final int link_register=0x7f06000b;
         public static final int login_progress_signing_in=0x7f060006;
-        public static final int logo_text=0x7f06000b;
+        /**  Strings related to application 
+         */
+        public static final int logo_text=0x7f06001a;
+        public static final int prompt_address=0x7f060013;
+        public static final int prompt_confirm_password=0x7f060016;
+        public static final int prompt_dob=0x7f06000f;
+        public static final int prompt_email=0x7f060015;
+        public static final int prompt_female=0x7f060012;
+        /**  Strings related to register 
+         */
+        public static final int prompt_firstname=0x7f06000d;
+        public static final int prompt_gender=0x7f060010;
+        public static final int prompt_lastname=0x7f06000e;
+        public static final int prompt_license=0x7f060014;
+        public static final int prompt_male=0x7f060011;
+        public static final int prompt_password=0x7f060003;
+        public static final int prompt_phone_number=0x7f060017;
         /**  Strings related to login 
          */
-        public static final int prompt_email=0x7f060002;
-        public static final int prompt_password=0x7f060003;
+        public static final int prompt_user=0x7f060002;
         public static final int title_activity_login=0x7f060001;
+        public static final int title_activity_register=0x7f06001b;
     }
     public static final class style {
         /** 
