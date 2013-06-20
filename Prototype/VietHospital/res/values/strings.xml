@@ -1,5 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">Viet Hospital</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_register">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="login_progress_signing_in">Signing in</string>
+    <string name="error_invalid_email">This username is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="logo_text">Viet Hospital</string>
+    <string name="link_register"><u>New User</u></string>
+    <string name="link_forgot_password"><u>Forgot Password</u></string>
 
 </resources>
